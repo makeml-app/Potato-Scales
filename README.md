@@ -4,7 +4,7 @@
 
 [MakeML](https://makeml.app?from=github_potato_weigher) is a Developer Tool for Creating Object Detection and Segmentation Neural Networks without a Line of Code. It's built to make the training process easy to setup. It is designed to handle data sets, training configurations, markup and training processes — all in one place.
 
-## MakeML Potato Weigher
+## MakeML Potato Scales
 Is an iOS app example that shows how you can weigh potatoes using only iPhone with semantic segmentation. The machine learning model was trained for 20 minutes with 13 photos. Have used tensorflow (deeplab) for training model and their SDK for iOS.
 <div align="center">
 <img src="images/potato_result.gif">
