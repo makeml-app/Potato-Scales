@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var preView: UIView!
-    private let coefficient = 47
+    private let coefficient = 0.000262
     var model: DeepLabModel!
     var session: AVCaptureSession!
     var videoDataOutput: AVCaptureVideoDataOutput!
@@ -140,9 +140,8 @@ class ViewController: UIViewController {
         let convertedColor = UInt32(selectedColor.switchBlueToRed()!)
         let result: UnsafeMutablePointer<UInt8> = model.process(pixelBuffer, additionalColor: convertedColor)
         let buffer = UnsafeMutableRawPointer(result)
-        let coloredPixelsCount = model.lastCordinates.count
-        print("coloredPixelsCount: \(coloredPixelsCount)")
-        let weights = coloredPixelsCount/coefficient
+        let coloredPixelsCount = Double(model.lastCordinates.count)
+        let weights = Int(pow(coloredPixelsCount.squareRoot(), 3) * coefficient)
         
         DispatchQueue.main.async {
             self.weightLabel.text = "\(weights) g"
