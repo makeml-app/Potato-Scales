@@ -13,7 +13,7 @@ Is an iOS app example that shows how you can weigh potatoes using only iPhone wi
 ## Train Objects Segmentation .tflite model
 [![MakeML object detection and segmentation ML models](https://img.shields.io/static/v1?label=platform&message=macOS&color=blue)](https://makeml.app)
 
-See the [Tutorial](https://makeml.app/docs/nails_tutorial_intro?from=github_potato_weigher) for the training object segmentation model without a line of code with macOS desktop application.
+See the [Tutorial](https://makeml.app/docs/potato_scales_editorial?from=github_potato_weigher) for the training object segmentation model without a line of code with macOS desktop application.
 
 <div align="center">
 <img src="images/nails_adding_annotations.gif">
